@@ -25,18 +25,13 @@ components:
     endpoints:
     - name: 8080-tcp
       targetPort: 8080
-    - exposure: public
-      name: lightbulb
-      path: /
-      protocol: http
-      targetPort: 8080
     env:
-    - name: KEY1
-      value: VALUE1
     - name: KEY2
       value: VALUE2
     - name: KEY3
       value: VALUE3
+    - name: KEY1
+      value: VALUE1
     image: quay.io/eclipse/che-java11-maven:nightly
     memoryLimit: 768Mi
     mountSources: true
